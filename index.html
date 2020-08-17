@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Application using Angular</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="LunchCheck">
+    <div ng-controller="LunchCheckController">
+    <h1>Mahesh Kumar Saini</h1>
+    <h3>Single Page web application using Angular</h3>
+    <h2>Check Your Lunch</h2>
+    <input type="text" name="lunchitems" ng-model="lunchitems">
+    <br>
+    <button ng-click="checkLunch()">Check If me too </button>
+    <br>
+    {{message}}
+    </div>
+</body>
+</html>
